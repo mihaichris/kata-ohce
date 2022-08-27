@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ReplyReverse.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.tv.ohce.repliers;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class ReplyReverse {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static String to(String input) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_5'/>
+5
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_5'>1</a>
+<span>
+
+1. to : replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyReverse::to &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new StringBuilder(input).reverse().toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@18a096b5_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@18a096b5_5'>5</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@18a096b5_5'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>to<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyReverseTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyReverseTest]/[method:reverse_the_input()]</span></span> replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyReverse::to &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_with_palindrome_with_modify()] (12 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect_v1()] (18 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect1_v2()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon_with_no_palindrom()] (14 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_palindrome_but_no_modify()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening_with_no_palindrome()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_string_2_will_modify()] (14 ms)</li><li>com.tv.ohce.repliers.ReplyReverseTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyReverseTest]/[method:reverse_the_input()] (5 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_palindrome_but_no_stop_in_second_try_and_no_modify()] (13 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect_v3()] (12 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon()] (21 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening_with_palindrome_with_modify()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m3_on_start()] (10 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_n_between_0_and_23()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning()] (7 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_palindrome()] (26 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m2_on_start()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m1_on_start()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon_with_palindrome_with_modify()] (10 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.3
+
+</body>
+</html>

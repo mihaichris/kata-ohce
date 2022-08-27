@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Greet.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.tv.ohce.greet;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.time.LocalTime;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Greet {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final String salute;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String GREET_EVENING = &#34;&#161;Buenas noches &#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String GREET_MORNING = &#34;&#161;Buenos d&#237;as &#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static final String GREET_AFTERNOON = &#34;&#161;Buenas tardes &#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Greet(String name, LocalTime moment) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int hour = moment.getHour();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_14'>4</a>
+<span>
+
+1. &#60;init&#62; : changed conditional boundary &rarr; KILLED<br/>
+
+2. &#60;init&#62; : changed conditional boundary &rarr; KILLED<br/>
+
+3. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+4. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (hour &#62;= 6 &#38;&#38; hour &#60; 12) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            this.salute = GREET_MORNING + name + &#34;!&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_16'>4</a>
+<span>
+
+1. &#60;init&#62; : changed conditional boundary &rarr; KILLED<br/>
+
+2. &#60;init&#62; : changed conditional boundary &rarr; KILLED<br/>
+
+3. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+4. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        } else if (hour &#62;= 12 &#38;&#38; hour &#60; 20) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            this.salute =  GREET_AFTERNOON + name + &#34;!&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            this.salute = GREET_EVENING + name + &#34;!&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String toString() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_25'>1</a>
+<span>
+
+1. toString : replaced return value with &#34;&#34; for com/tv/ohce/greet/Greet::toString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return salute;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@11787b64_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@11787b64_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_6am()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_12am()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_11am()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_11am()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@11787b64_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_12am()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_20pm()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_0am()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_20pm()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@11787b64_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@11787b64_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_11am()]</span></span> replaced return value with &#34;&#34; for com/tv/ohce/greet/Greet::toString &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_20pm()] (3 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_kill_mutant_inputChatLength_not_equal_2()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect1_v2()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_stop_on_throw_out_of_range()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_kill_mutant_inputChatLength_greater()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening_with_no_palindrome()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_string_2_will_modify()] (10 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_6am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_palindrome_but_no_stop_in_second_try_and_no_modify()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect_v3()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon()] (22 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m3_on_start()] (8 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_23am()] (3 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_palindrome()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_end_execution()] (10 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m2_on_start()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_kill_mutant_n_boundary_0()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_kill_mutant_n_boundary_23()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m1_on_start()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon_with_palindrome_with_modify()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_with_palindrome_with_modify()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect_v1()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon_with_no_palindrom()] (11 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_invalid_message_2()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_palindrome_but_no_modify()] (10 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_11am()] (3 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_0am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_minim_1()] (13 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_5am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_empty_string()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_stop_on_stop_chat()] (7 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening_with_palindrome_with_modify()] (13 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_19pm()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_n_between_0_and_23()] (11 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning()] (10 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_maxim_y()] (12 ms)</li><li>com.tv.ohce.greet.GreetTest.[engine:junit-jupiter]/[class:com.tv.ohce.greet.GreetTest]/[method:greetings_at_12am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_bigger_string()] (9 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.3
+
+</body>
+</html>

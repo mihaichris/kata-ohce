@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ReplyModified.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.tv.ohce.repliers;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class ReplyModified {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static String to(String input, Integer index) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String response = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_6'/>
+6
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_6'>1</a>
+<span>
+
+1. to : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (index == 0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_7'/>
+7
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_7'>1</a>
+<span>
+
+1. to : replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyModified::to &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return input;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            try {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                String character = Character.toString(input.charAt(index));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                response = modify(input, character);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            } catch (IndexOutOfBoundsException ignored) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_15'>1</a>
+<span>
+
+1. to : replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyModified::to &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return response;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private static String modify(String input, String character) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        StringBuilder modified = new StringBuilder();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String[] parts = input.split(&#34;((?&#60;=&#34; + character + &#34;)|(?=&#34; + character + &#34;))&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_21'/>
+21
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_21'>2</a>
+<span>
+
+1. modify : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. modify : Replaced integer division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        String middlePart = parts[(parts.length - 1) / 2];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (String part : parts) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_23'/>
+23
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_23'>1</a>
+<span>
+
+1. modify : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (part.equals(middlePart)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                modified.append(part);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                modified.append(new StringBuilder(part).reverse().toString());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_29'>1</a>
+<span>
+
+1. modify : replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyModified::modify &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return modified.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79a13920_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79a13920_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>to<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_with_no_index_found()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79a13920_7'>7</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_7'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>to<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_5am()]</span></span> replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyModified::to &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79a13920_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>to<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_with_no_index_found()]</span></span> replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyModified::to &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79a13920_21'>21</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_21'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>modify<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_10am()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>modify<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_10am()]</span></span> Replaced integer division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79a13920_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>modify<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_10am()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79a13920_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79a13920_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>modify<br/><b>Killed by : </b>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_10am()]</span></span> replaced return value with &#34;&#34; for com/tv/ohce/repliers/ReplyModified::modify &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect1_v2()] (9 ms)</li><li>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_10am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_string_2_will_modify()] (10 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_kill_mutant_inputChatLength_greater()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening_with_no_palindrome()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_palindrome_but_no_stop_in_second_try_and_no_modify()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon()] (22 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect_v3()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m3_on_start()] (8 ms)</li><li>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_23am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_palindrome()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m2_on_start()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_show_message_m1_on_start()] (8 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon_with_palindrome_with_modify()] (9 ms)</li><li>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_5am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_with_palindrome_with_modify()] (9 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:test_display_reverse_of_s1_in_effect_v1()] (9 ms)</li><li>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_at_1am()] (4 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_afternoon_with_no_palindrom()] (11 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning_palindrome_but_no_modify()] (10 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_minim_1()] (13 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_evening_with_palindrome_with_modify()] (13 ms)</li><li>com.tv.ohce.repliers.ReplyModifiedTest.[engine:junit-jupiter]/[class:com.tv.ohce.repliers.ReplyModifiedTest]/[method:modified_input_with_no_index_found()] (3 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_n_between_0_and_23()] (11 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_in_the_morning()] (10 ms)</li><li>com.tv.ohce.controller.OhceConsoleControllerTest.[engine:junit-jupiter]/[class:com.tv.ohce.controller.OhceConsoleControllerTest]/[method:run_with_maxim_y()] (12 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.3
+
+</body>
+</html>
