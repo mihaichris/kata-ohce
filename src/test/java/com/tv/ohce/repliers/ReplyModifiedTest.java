@@ -9,7 +9,7 @@ public class ReplyModifiedTest {
 
 
     /**
-     * Testarea valorilor de frontieră ----Start----
+     * Boundary Values  ----Start----
      * ===========================================
      */
     @Test

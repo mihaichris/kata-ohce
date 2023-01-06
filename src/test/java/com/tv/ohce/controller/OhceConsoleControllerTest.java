@@ -19,7 +19,7 @@ public class OhceConsoleControllerTest {
     }
 
     /**
-     * Partiționare pe clase de echivalență ----Start----
+     * Category Partition ----Start----
      * ===========================================
      */
     @Test
@@ -208,7 +208,7 @@ public class OhceConsoleControllerTest {
     }
 
     /**
-     * Testarea valorilor de frontieră ----Start----
+     * Boundary Values ----Start----
      * ===========================================
      */
     @Test
@@ -269,7 +269,7 @@ public class OhceConsoleControllerTest {
 
 
     /**
-     * Graf cauză efect ----Start----
+     * Cause-Effect Graphing ----Start----
      * ===========================================
      */
 

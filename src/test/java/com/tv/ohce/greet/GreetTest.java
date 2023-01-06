@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GreetTest {
 
     /**
-     * Testarea valorilor de frontieră ----Start----
+     * Boundary Values ----Start----
      * ===========================================
      */
     @Test
