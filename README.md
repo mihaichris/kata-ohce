@@ -1,6 +1,6 @@
 # Kata Ohce
 
-A coding kata used as an example for [Functional Testing]() article.
+A coding kata used as an example for my [Functional Testing]() article.
 
 ## Description
 
