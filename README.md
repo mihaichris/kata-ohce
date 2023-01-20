@@ -148,7 +148,7 @@ These outputs are used to split the input range into 2 classes: one for the case
    * Ef5: Display message m5 (the message indicating whether the string s1 is a palindrome);
    * Ef6: Display message m6 (the program execution closing message);
    
-![cause-effect-graph](cause-effect-graph.png)
+![cause-effect-graph](src/main/resources/images/cause-effect-graph.png)
 
 ## Decision Table
 
@@ -396,7 +396,7 @@ We have only one case, where C11=1.
 The result is the decision table with Nr_columns = 12+1=13.
 
 ## Transforming the program into a directed graph
-![cause-effect-graph](directed-graph.png)
+![cause-effect-graph](src/main/resources/images/directed-graph.png)
 
 Conditions we cover:
 C1: this.time >= 0
@@ -510,45 +510,45 @@ To carry out the tests with mutants we used the PITest utility. For each report 
 
 Report 202103112049
 1)
-![report-202103112049.png](report-202103112049.png)
+![report-202103112049.png](src/main/resources/images/report-202103112049.png)
 
 In this report, the non-equivalent mutant that survived was number 4. The change it made was changing the conditional boundaries: from this.time>=0 && this.time <= 23 changed to this.time > 0 && this.time < 23, thus negating the condition where time can be for example 0 or 23.
 
 The solution was to check that when this.time is 0 or 23, it no longer displays console.print("Time must be between 0 and 23").
 
-![mutation-testing-1.png](mutation-testing-1.png)
+![mutation-testing-1.png](src/main/resources/images/mutation-testing-1.png)
 This is an example of using ohce during an evening:
 
 Report 202103271140
 2)
-![report-202103271140.png](report-202103271140.png)
+![report-202103271140.png](src/main/resources/images/report-202103271140.png)
 
 The next non-equivalent mutant left alive is changing this.maxChatLength <= 0 to this.maxChatLength < 0. The following test specifies for y = 0 to return the invalidation message.
 
-![mutation-testing-2.png](mutation-testing-2.png)
+![mutation-testing-2.png](src/main/resources/images/mutation-testing-2.png)
 
 3)
-![mutation-testing-3.png](mutation-testing-3.png)
+![mutation-testing-3.png](src/main/resources/images/mutation-testing-3.png)
 
 The following non-equivalent mutant changed the return for transforming the input if its index is word found.
 
-![mutation-testing-4.png](mutation-testing-4.png)
+![mutation-testing-4.png](src/main/resources/images/mutation-testing-4.png)
 
 4)
-![mutation-testing-5.png](mutation-testing-5.png)
+![mutation-testing-5.png](src/main/resources/images/mutation-testing-5.png)
 
 This mutant is interesting because in addition to negating the condition: userInput.length() > this.maxChatLength || userInput.length() == 0 in userInput.length() <= this.maxChatLength || userInput.lenght() == 0, caused the application to enter a repetitive loop where the program does not exit due to the exception and waits for new input from the user.
 Killing this non-equivalent mutant required creating a test that directly specifies that when the length of the string is equal to y, I don't display the error message, and for the other condition it was killed by the tests created up to this point.
 
-![mutation-testing-6.png](mutation-testing-6.png)
+![mutation-testing-6.png](src/main/resources/images/mutation-testing-6.png)
 
 5)
-![mutation-testing-7.png](mutation-testing-7.png)
+![mutation-testing-7.png](src/main/resources/images/mutation-testing-7.png)
 
 Mutant 5 did the same thing. He negated the condition that when he writes in the chat "Stop!" to check that it is not equal and the non-equal mutant breaks the program closure.
 
 The solution was:
-![mutation-testing-8.png](mutation-testing-8.png)
+![mutation-testing-8.png](src/main/resources/images/mutation-testing-8.png)
 
 Report 202103271245 shows the results for all mutants killed by the tests created above. Mutation testing came out 100% for this project.
 
