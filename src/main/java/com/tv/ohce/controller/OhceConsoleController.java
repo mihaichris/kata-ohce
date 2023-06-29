@@ -23,8 +23,7 @@ public class OhceConsoleController {
         this.time = time;
     }
 
-    public void
-    run(String name) {
+    public void run(String name) {
         LocalTime localTime;
         if (this.time >= 0 && this.time <= 23) {
             localTime = LocalTime.of(this.time, 0);
@@ -62,7 +61,6 @@ public class OhceConsoleController {
             reply(ReplyModified.to(userInput, this.index));
         } while (true);
     }
-
 
     private void reply(String reply) {
         if (reply != null) {
