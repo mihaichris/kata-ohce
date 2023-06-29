@@ -33,7 +33,7 @@ public class OhceConsoleController {
             return;
         }
         if (this.maxChatLength <= 0) {
-            console.print("MaxChatLength must not be smaller than 0.");
+            console.print("Max chat length must not be smaller than 0.");
             return;
         }
         String salute = new Greet(name, localTime).toString();
