@@ -185,7 +185,7 @@ public class EquivalencePartitioningTest {
         ohce = new OhceConsoleController(console, -1, 10);
         ohce.run("Mihai");
         Mockito.verify(this.console, Mockito.times(1)).print(Mockito.anyString());
-        Mockito.verify(this.console, Mockito.times(1)).print("MaxChatLength must not be smaller than 0.");
+        Mockito.verify(this.console, Mockito.times(1)).print("Max chat length must not be smaller than 0.");
     }
 
     @Test

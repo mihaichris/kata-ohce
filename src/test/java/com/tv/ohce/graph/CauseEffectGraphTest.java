@@ -134,7 +134,7 @@ public class CauseEffectGraphTest {
         ohce = new OhceConsoleController(console, -1, 1);
         ohce.run("Mihai");
         Mockito.verify(this.console, Mockito.times(1)).print(Mockito.anyString());
-        Mockito.verify(this.console, Mockito.times(1)).print("MaxChatLength must not be smaller than 0.");
+        Mockito.verify(this.console, Mockito.times(1)).print("Max chat length must not be smaller than 0.");
     }
 
     @Test
@@ -169,7 +169,7 @@ public class CauseEffectGraphTest {
         ohce = new OhceConsoleController(console, 0, 1);
         ohce.run("Mihai");
         Mockito.verify(this.console, Mockito.times(1)).print(Mockito.anyString());
-        Mockito.verify(this.console, Mockito.times(1)).print("MaxChatLength must not be smaller than 0.");
+        Mockito.verify(this.console, Mockito.times(1)).print("Max chat length must not be smaller than 0.");
     }
 
     @Test
