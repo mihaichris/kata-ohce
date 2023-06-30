@@ -48,7 +48,7 @@ public class OhceConsoleController {
     }
 
     public void listenToUser() throws StopException, ChatLengthOutOfRangeException {
-        do {
+        while (true) {
             String userInput = console.read();
             if (userInput.equals("Stop!")) {
                 throw new StopException();
@@ -59,7 +59,7 @@ public class OhceConsoleController {
             reply(ReplyReverse.to(userInput));
             reply(ReplyPalindrome.to(userInput));
             reply(ReplyModified.to(userInput, this.index));
-        } while (true);
+        }
     }
 
     private void reply(String reply) {
